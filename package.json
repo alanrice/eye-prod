@@ -1,0 +1,29 @@
+{
+  "name": "blinkie",
+  "version": "1.0.0",
+  "description": "Blink reminder",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanrice/blinkie.git"
+  },
+  "keywords": [
+    "eye",
+    "blink"
+  ],
+  "author": "Alan Rice",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alanrice/blinkie/issues"
+  },
+  "homepage": "https://github.com/alanrice/blinkie#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  },
+  "dependencies": {
+    "menubar": "^4.0.2"
+  }
+}
