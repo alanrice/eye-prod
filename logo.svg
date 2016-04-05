@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 367.90545 184.77921"
+   height="52.1488mm"
+   width="103.83109mm">
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-29.273254,-64.446901)"
+     id="layer1">
+    <text
+       id="text4136"
+       y="178.07651"
+       x="77.14286"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:80px;line-height:125%;font-family:Dosis;-inkscape-font-specification:Dosis;letter-spacing:-0.80000001px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:600;font-stretch:normal;font-family:Dosis;-inkscape-font-specification:'Dosis Semi-Bold';fill:#a593e0;fill-opacity:1"
+         y="178.07651"
+         x="77.14286"
+         id="tspan4138">Eye Prod</tspan></text>
+  </g>
+</svg>
