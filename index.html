@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eye-prod</title>
+  <link rel="stylesheet" href="./mdl/material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <style>
+    body {
+      background-color: #FFFFF3;
+      color:#566270;
+    }
+    .mdl-slider__background-upper {background: #E0E3DA;}
+    .mdl-list__item {color:#566270;}
+    .mdl-layout__header-row,
+    .mdl-switch.is-checked .mdl-switch__thumb,
+    .mdl-slider__background-lower {
+      background-color: #A593E0;
+    }
+
+    .mdl-switch.is-checked .mdl-switch__track {
+      background: rgba(165, 147, 224, 0.5);
+    }
+
+    .mdl-list__item-avatar,
+    .mdl-list__item-avatar.material-icons {
+      background-color: #566270;
+    }
+
+    ..mdl-slider.is-upgraded {
+      color: #A593E0;
+    }
+
+    * {
+      -webkit-user-select: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .mdl-layout__header-row {
+        padding: 0 16px 0 16px;
+      }
+      ul,
+      menu,
+      dir {
+        -webkit-padding-start: 0px;
+      }
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 200;
+      src: local('Dosis ExtraLight'), local('Dosis-ExtraLight'), url(https://fonts.gstatic.com/s/dosis/v4/VK-RlLrn4NFhRGqPkj6IwBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 200;
+      src: local('Dosis ExtraLight'), local('Dosis-ExtraLight'), url(https://fonts.gstatic.com/s/dosis/v4/RPKDmaFi75RJkvjWaDDb0nYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v4/SHQzTQBI7152hSrIuGUiVBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 300;
+      src: local('Dosis Light'), local('Dosis-Light'), url(https://fonts.gstatic.com/s/dosis/v4/7aJzV14HzAOiwNTiPgucGXYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v4/3isE9muMMOq1K7TQ7HkKvIDGDUGfDkXyfkzVDelzfFk.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v4/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    /* latin-ext */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v4/fP7ud4UTUWGxo-nV1joC1RkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+    }
+    /* latin */
+
+    @font-face {
+      font-family: 'Dosis';
+      font-style: normal;
+      font-weight: 700;
+      src: local('Dosis Bold'), local('Dosis-Bold'), url(https://fonts.gstatic.com/s/dosis/v4/22aDRG5X9l7obljtz7tihnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    }
+    .mdl-layout-title, .mdl-layout__tab {
+      font-family: 'Dosis';
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Eye Prod</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!--       <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href=""><i class="material-icons  mdl-list__item-icon">do_not_disturb_off</i> Snooze</a>
+      </nav> -->
+      </div>
+      <!--<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Blinks</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Breaks</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Compresses</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab">Drops</a>
+      </div>-->
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--12-col">
+            <ul>
+              <li class="mdl-list__item mdl-cell--12-col mdl-list__item--three-line">
+                <div class="mdl-cell mdl-cell--10-col">
+                  <span class="mdl-list__item-primary-content">
+                    <span>Blink reminder</span>
+                    <span class="mdl-list__item-text-body">
+                      Periodic reminder to take a full, proper blink.
+                    </span>
+                  </span>
+                </div>
+                <div class="mdl-cell mdl-cell--2-col">
+                  <span class="mdl-list__item-secondary-action">
+                    <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+                      <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+                    </label>
+                  </span>
+                </div>
+              </li>
+
+              <li class="mdl-list__item mdl-cell--12-col mdl-list__item--three-line">
+                <div class="mdl-cell mdl-cell--7-col">
+                  <span class="mdl-list__item-primary-content">
+                  <span>
+                    Reminder interval:  <span id="interval-display">  15 minutes</span>
+                  </span>
+                  <span class="mdl-list__item-text-body">
+                    How often blink reminders occur.
+                  </span>
+                  </span>
+                </div>
+                <div class="mdl-cell mdl-cell--5-col">
+                  <span class="mdl-list__item-secondary-action">
+                    <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="1" max="100" value="15" step="1">
+                  </span>
+                </div>
+              </li>
+
+              <li class="mdl-list__item mdl-cell--12-col mdl-list__item--three-line">
+                <div class="mdl-cell mdl-cell--7-col">
+                  <span class="mdl-list__item-primary-content">
+                  <span>
+                    Interval variability: +/- <span id="variability-display">10 minutes</span>
+                  </span>
+                  <span class="mdl-list__item-text-body">
+                    Increased variability makes the reminders less predictable. At +/- 0, reminders occur every X minutes as set above. Reminders never occur more often than once per minute.
+                  </span>
+                  </span>
+                </div>
+                <div class="mdl-cell mdl-cell--5-col">
+                  <span class="mdl-list__item-secondary-action">
+                    <input class="mdl-slider mdl-js-slider" type="range" id="s2" min="0" max="10" value="10" step="1">
+                  </span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./mdl/material.min.js"></script>
+  <script>
+    if (typeof localStorage.status === 'undefined') {
+      localStorage.status = 'on'
+    } else {
+      if (localStorage.status === 'on') {
+        document.getElementById("list-switch-1").checked = true
+      } else {
+        document.getElementById("list-switch-1").checked = false
+      }
+    }
+
+    var pluralize = require("remote").require('pluralize')
+    var Chance = require("remote").require('chance')
+    var chance = new Chance()
+
+    if (typeof localStorage.interval === 'undefined') {
+      document.getElementById("s1").value = 15
+      localStorage.interval = 15
+    } else {
+      document.getElementById("s1").value = localStorage.interval
+      document.getElementById("interval-display").textContent = pluralize('minute', Number(localStorage.interval), true)
+    }
+
+    if (typeof localStorage.variability === 'undefined') {
+      document.getElementById("s2").value = 10
+      localStorage.variability = 10
+    } else {
+      document.getElementById("s2").value = localStorage.variability
+      document.getElementById("variability-display").textContent = pluralize('minute', Number(localStorage.variability), true)
+    }
+
+    document.getElementById("list-switch-1").addEventListener('click', function() {
+      localStorage.status = (localStorage.status != 'on' ? 'on' : 'off')
+      resetTimer()
+    }, false)
+
+    document.getElementById("s1").addEventListener('input', function() {
+      localStorage.interval = document.getElementById("s1").value
+      document.getElementById("interval-display").textContent = pluralize('minute', Number(document.getElementById("s1").value), true)
+      resetTimer()
+    }, false)
+
+    document.getElementById("s2").addEventListener('input', function() {
+      localStorage.variability = document.getElementById("s2").value
+      document.getElementById("variability-display").textContent = pluralize('minute', Number(document.getElementById("s2").value), true)
+      resetTimer()
+    }, false)
+
+    require('electron').ipcRenderer.on('status-from-main', function(event, arg) {
+      if(arg === 'suspend' || arg === 'resume'){
+        resetTimer()
+      }
+    })
+
+    var displayNotification = function() {
+      var myNotification = new Notification('Blink reminder', {
+        body: 'Remember to blink regularly.'
+      })
+    }
+
+    var timer = null
+
+    var resetTimer = function() {
+      clearTimeout(timer)
+      loop()
+    }
+
+    var loop = function() {
+      var min = Number(localStorage.interval) - Number(localStorage.variability)
+      if (min < 1) {
+        min = 1
+      }
+      var max = Number(localStorage.interval) + Number(localStorage.variability)
+      timer = setTimeout(function() {
+        if (localStorage.status === 'on') {
+          displayNotification()
+        }
+        loop()
+      }, chance.floating({
+        min: min,
+        max: max
+      }) * 60 * 1000)
+    }
+    loop()
+  </script>
+</body>
+
+</html>

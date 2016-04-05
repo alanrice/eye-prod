@@ -1,5 +1,6 @@
 {
-  "name": "blinkie",
+  "name": "eye-prod",
+  "productName": "Eye Prod",
   "version": "1.0.0",
   "description": "Blink reminder",
   "main": "main.js",
@@ -8,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alanrice/blinkie.git"
+    "url": "git+https://github.com/alanrice/eye-prod.git"
   },
   "keywords": [
     "eye",
@@ -17,13 +18,15 @@
   "author": "Alan Rice",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alanrice/blinkie/issues"
+    "url": "https://github.com/alanrice/eye-prod/issues"
   },
-  "homepage": "https://github.com/alanrice/blinkie#readme",
+  "homepage": "https://github.com/alanrice/eye-prod#readme",
   "devDependencies": {
-    "electron-prebuilt": "^0.36.0"
+    "electron-prebuilt": "^0.37.4"
   },
   "dependencies": {
-    "menubar": "^4.0.2"
+    "chance": "^1.0.1",
+    "menubar": "^4.1.0",
+    "pluralize": "^1.2.1"
   }
 }
