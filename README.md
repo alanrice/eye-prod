@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img width="400" src="logo.svg" alt="Eye Prod">
+	<img width="400" src="https://rawgit.com/alanrice/eye-prod/master/logo.svg" alt="Eye Prod">
 </h1>
 <br>
 <br>
