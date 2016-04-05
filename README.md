@@ -15,7 +15,13 @@
 
 # Using Eye Prod
 
-<div align="center"><img src="https://rawgit.com/alanrice/eye-prod/master/images/panelDesktop.png" alt="Eye Prod"></div>
+
+<div align="center">
+<img src="https://rawgit.com/alanrice/eye-prod/master/images/panelDesktop.png" alt="Eye Prod">
+
+<br><br>
+
+<img style="max-width:394px;" src="https://rawgit.com/alanrice/eye-prod/master/images/notification.png" alt="Eye Prod"></div>
 
 Currently Eye Prod has been released for Mac only. Grab the latest version over on the [releases page](https://github.com/alanrice/eye-prod/releases).
 
