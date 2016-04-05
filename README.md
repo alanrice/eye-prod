@@ -15,6 +15,8 @@
 
 # Using Eye Prod
 
+<div align="center"><img src="https://rawgit.com/alanrice/eye-prod/master/images/panelDesktop.png" alt="Eye Prod"></div>
+
 Currently Eye Prod has been released for Mac only. Grab the latest version over on the [releases page](https://github.com/alanrice/eye-prod/releases).
 
 Issues and feature requests can be logged as [issues](https://github.com/alanrice/eye-prod/issues).
