@@ -10,10 +10,10 @@ const menubar = require('menubar')
 
 var mb = menubar({icon: path.join(__dirname, 'icon.png'),
 	index: 'file://' + path.join(__dirname, 'index.html'),
-	width: 600,
-	height: 430,
+	width: 575,
+	height: 330,
 	resizable: false,
-	'preload-window': true})
+	preloadWindow: true})
 
 mb.on('ready', function ready () {
   console.log('app is ready')

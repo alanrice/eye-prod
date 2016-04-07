@@ -1,11 +1,12 @@
 {
   "name": "eye-prod",
-  "productName": "Eye Prod",
-  "version": "1.0.0",
+  "productName": "EyeProd",
+  "version": "1.0.1",
   "description": "Blink reminder",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron main.js",
+    "build-mac": "electron-packager ./ --platform=darwin --arch=x64 --overwrite --icon appicon.png.icns --version 0.37.3 --prune true"
   },
   "repository": {
     "type": "git",

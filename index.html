@@ -47,6 +47,20 @@
         -webkit-padding-start: 0px;
       }
     }
+
+    @media (max-width: 839px) and (min-width: 480px) {
+.mdl-cell {
+    margin: 0px;
+  }
+.mdl-grid{
+    padding: 0px;
+  }
+
+  .mdl-cell--12-col, .mdl-cell--12-col-tablet.mdl-cell--12-col-tablet {
+      width: 100%;
+  }
+}
+
     /* latin-ext */
 
     @font-face {
@@ -168,7 +182,7 @@
               </li>
 
               <li class="mdl-list__item mdl-cell--12-col mdl-list__item--three-line">
-                <div class="mdl-cell mdl-cell--7-col">
+                <div class="mdl-cell mdl-cell--8-col">
                   <span class="mdl-list__item-primary-content">
                   <span>
                     Reminder interval:  <span id="interval-display">  15 minutes</span>
@@ -178,7 +192,7 @@
                   </span>
                   </span>
                 </div>
-                <div class="mdl-cell mdl-cell--5-col">
+                <div class="mdl-cell mdl-cell--4-col">
                   <span class="mdl-list__item-secondary-action">
                     <input class="mdl-slider mdl-js-slider" type="range" id="s1" min="1" max="100" value="15" step="1">
                   </span>
@@ -186,7 +200,7 @@
               </li>
 
               <li class="mdl-list__item mdl-cell--12-col mdl-list__item--three-line">
-                <div class="mdl-cell mdl-cell--7-col">
+                <div class="mdl-cell mdl-cell--8-col">
                   <span class="mdl-list__item-primary-content">
                   <span>
                     Interval variability: +/- <span id="variability-display">10 minutes</span>
@@ -196,7 +210,7 @@
                   </span>
                   </span>
                 </div>
-                <div class="mdl-cell mdl-cell--5-col">
+                <div class="mdl-cell mdl-cell--4-col">
                   <span class="mdl-list__item-secondary-action">
                     <input class="mdl-slider mdl-js-slider" type="range" id="s2" min="0" max="10" value="10" step="1">
                   </span>
