@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img width="400" src="https://rawgit.com/alanrice/eye-prod/master/logo.svg" alt="Eye Prod">
+	<img width="400" src="https://github.com/alanrice/eye-prod/raw/master/logo.svg" alt="Eye Prod">
 </h1>
 <br>
 <br>
@@ -17,11 +17,11 @@
 
 
 <div align="center">
-<img src="https://rawgit.com/alanrice/eye-prod/master/images/panelDesktop.png" alt="Eye Prod">
+<img src="https://github.com/alanrice/eye-prod/raw/master/images/panelDesktop.png" alt="Eye Prod">
 
 <br><br>
 
-<img style="max-width:394px;" src="https://rawgit.com/alanrice/eye-prod/master/images/notification.png" alt="Eye Prod"></div>
+<img style="max-width:394px;" src="https://github.com/alanrice/eye-prod/raw/master/images/notification.png" alt="Eye Prod"></div>
 
 Currently Eye Prod has been released for Mac only. Grab the latest version over on the [releases page](https://github.com/alanrice/eye-prod/releases).
 
